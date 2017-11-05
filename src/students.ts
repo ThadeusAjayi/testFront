@@ -1,5 +1,5 @@
 export interface Student {
-    $key: Number,
+    _id: String,
     name: String,
     age: String,
     sex: String,

@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from './services/api.service';
-import {Student} from '../students';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +6,10 @@ import {Student} from '../students';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'app';
+
   constructor() {}
 
-    ngOnInit () {}
+    ngOnInit () {
+      
+    }
 }
