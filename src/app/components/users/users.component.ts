@@ -17,7 +17,7 @@ export class UsersComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.student = this.http.get<Student>('http://stdresources.herokuapp.com/resources')
+    this.student = this.http.get<Student>('https://stdresources.herokuapp.com/resources')
     .subscribe(data => {
       this.student = data;
     });
@@ -32,7 +32,7 @@ export class UsersComponent implements OnInit {
       faculty: faculty,
       level: level
     }
-    this.http.post('http://stdresources.herokuapp.com/resources', newStudent)
+    this.http.post('https://stdresources.herokuapp.com/resources', newStudent)
     .subscribe(data => {
       alert(name + " has been added to students");
       this.ngOnInit();
@@ -48,7 +48,7 @@ export class UsersComponent implements OnInit {
       faculty: faculty,
       level: level
     }
-    this.http.put('http://stdresources.herokuapp.com/resources/' + key, newStudent)
+    this.http.put('https://stdresources.herokuapp.com/resources/' + key, newStudent)
     .subscribe(data => {
       alert(name + " details has been updated");
       this.addstud = true;
@@ -57,7 +57,7 @@ export class UsersComponent implements OnInit {
   }
   
   deleteStudent (key: string, name: string) {
-    this.http.delete('http://stdresources.herokuapp.com/resources/'+ key)
+    this.http.delete('https://stdresources.herokuapp.com/resources/'+ key)
     .subscribe(data => {
       alert(name + " has been removed from student resources")
       this.ngOnInit();
