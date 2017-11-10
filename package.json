@@ -8,8 +8,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --prod --aot --target=production"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -27,7 +26,7 @@
     "core-js": "^2.4.1",
     "express": "^4.16.2",
     "rxjs": "^5.5.2",
-    "typescript": "2.4.2"
+    "typescript": "~2.4.2"
   },
   "devDependencies": {
     "@angular/language-service": "^5.0.0",
@@ -47,9 +46,5 @@
     "ts-node": "~3.2.0",
     "@angular/compiler-cli": "^5.0.0",
     "tslint": "~5.7.0"
-  },
-  "engines": {
-    "node": "v6.11.0",
-    "npm": "v5.5.1"
   }
 }
